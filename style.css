@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* top header Secion */
+
+.header-section-container{
+    width: 100%;
+    height: auto;    
+}
+
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--Primary-Main-1, #F5F0EC);
+    font-family: 'Roboto', sans-serif;
+    background-color: #ba6e1777;
+    padding: 1rem 6.25rem;
+}
+
+.left-top-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact-details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.phone-details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;  
+    color: var(--Secondary-Main-1, #FFEDDD); 
+}
+    
+.email-details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+    color: var(--Secondary-Main-1, #FFEDDD);
+    
+}
+.email-details p{
+    color: var(--Primary-Main-1, #F5F0EC);
+/* Body Main */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.email-details i{
+    color: var(--Primary-Main-1, #F5F0EC);
+    font-size: 1rem;
+    
+}
+
+.right-top-header{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+
+.working-hours{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: var(--Secondary-Main-1, #FFEDDD);
+    justify-content: end;
+    align-items: end;
+}
+
+.time-details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: .5rem;
+    color: var(--Secondary-Main-1, #FFEDDD);
+}
+
+.date-details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+    color: var(--Secondary-Main-1, #FFEDDD);
+}
+.date-details p{
+    color: var(--Primary-Main-1, #F5F0EC);
+    font-size: 1rem; 
+}
+
+/* buttom Header */
+
+.bottom-header{
+    width: 100%;
+    height: auto;
+    padding: 2.625rem 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.bottom-left-header-container{
+    width: 9.728rem;
+    height: 3.0265rem;
+    justify-content: center;
+    align-items: center;    
+}
+
+.logo-container{
+    background-image: url(./Images/MLM\ POR\ COL.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+}
+
+.bottom-right-container{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+    /* background-color: aqua; */
+}
+
+/* menu links */
+
+.menu-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+    /* background-color: #FFEDDD; */
+}
+.menu-container ul{
+    list-style: none;
+    text-decoration: none;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-container ul li a{
+    color: var(--Primary-Main-1, #181716);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    font-family: Roboto;
+    cursor: pointer;  
+
+}
+
+.menu-container ul li a:hover{
+    color: var(--Secondary-Main-1, #E5871C);
+}
+
+.button-container{
+    width: 20%;
+    
+
+}
+
+.Button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--Secondary-Main, #E5871C);
+    color: var(--Primary-Main-1, #F5F0EC);
+    cursor: pointer;
+    
+}
+
+.button-container button:hover{
+    background: var(--Primary-Main, #FFEDDD);
+    color: var(--Secondary-Main-1, #181716);
+}
+
+/* Hero Section  */
+
+.hero-section{
+    width: 100%;
+    height: auto;
+}
+
+.hero-image-container{
+    width: 100%;
+    height: 49.625rem;
+    background-image: url(./Images/home-Hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: -12rem;
+}
+
+.text-group{
+    width: 100%;
+    
+}
+
+.hero-image-container h1{
+    width: 50%;
+    color: var(--Light-Main-1, #F9EFE6);
+    font-family: "Playfair Display";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+.hero-image-container p{
+    width: 50%;
+    color: var(--Primary-Main-1, #F5F0EC);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+.hero-image-container button{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--Secondary-Main, #E5871C);
+    color: var(--Primary-Main-1, #F5F0EC);
+    cursor: pointer;
+}
+.hero-image-container button:hover{
+    background: var(--Primary-Main, #FFEDDD);
+    color: var(--Secondary-Main-1, #181716);
+}
+
+/* scroll section */
+
+.scroll-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.home-img-container{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.home-image-itslef{
+    background-image: url(./Images/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+    
+}
+.home-image-itslef1{
+    background-image: url(./Images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+.home-image-itslef4{
+    background-image: url(./Images/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+.home-image-itslef5{
+    background-image: url(./Images/12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+
+.home-image-itslef6{
+    background-image: url(./Images/15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+.home-image-itslef8{
+    background-image: url(./Images/19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+
+.home-image-itslef9{
+    background-image: url(./Images/20.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+
+.home-image-itslef10{
+    background-image: url(./Images/13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+
+.home-image-itslef11{
+    background-image: url(./Images/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 11rem;
+}
+
+/*Page Headings*/
+
+.scroll-section{
+    width: 100%;
+    height: auto;
+}
+.heading-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 3rem  6.25rem ;
+    background: var(--Primary-Main, #301B04);
+}
+
+.heading-container h1{
+    color: var(--White, #FFF);
+
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* about us section*/
+
+.about-us-section{
+    width: 100%;
+    height: auto;
+    padding: 3.125rem 6.25rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    
+}
+.about-us-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* padding: 3.125rem 6.25rem; */
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    /* background-color: aqua; */
+}
+
+.about-us-image{
+    width: 30%;
+    height: auto;
+    background-image: url(./Images/mikki-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+    /* background-color: antiquewhite; */
+
+}
+
+.about-mikki{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    
+}
+
+.text-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    /* background-color: antiquewhite; */
+}
+
+.text-group h2{
+    color: var(--Primary-Main, #301B04);
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-group p{
+    color: var(--Primary-Main, #301B04);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.button-container1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    /* background-color: antiquewhite; */
+}
+.about-Button{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--Secondary-Main, #E5871C);
+    color: var(--Primary-Main-1, #F5F0EC);
+    cursor: pointer;
+}
+
+.about-Button:hover{
+    background: var(--Primary-Main, #FFEDDD);
+    color: var(--Secondary-Main-1, #181716);
+}
+
+/* overview section */
+
+.about-company-overview{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.about-company-overview a{
+    font-size: 1rem;
+    color: var(--Primary-Main, #301B04);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    gap: 1rem; 
+}
+
+.about-company-overview a:hover{
+    color: var(--Secondary-Main, #E5871C);
+}
+
+.portfolio-section{
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 6.25rem;
+    flex-wrap: wrap;
+
+}
+
+/* professional */
+
+.portfolio-image1{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/professional.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+
+/* pre wedding */
+
+.portfolio-image2{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/pre-wedding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+
+/* pre wedding */
+
+.portfolio-image3{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+/* product photography */
+
+.portfolio-image4{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/ring.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+
+/* portraits */
+
+.portfolio-image5{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/portraits.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+
+/* fashion */
+
+.portfolio-image6{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/fassionn-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+
+/* event */
+
+.portfolio-image7{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/event.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;
+}
+
+/* white */
+
+.portfolio-image8{
+    width: 20%;
+    height: auto;
+    background-image: url(./Images/white.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem;  
+}
+/*  image text content*/
+
+.portfolio-image1 a h2{
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--Secondary-Main, #E5871C);
+    text-decoration: none;
+}
+
+/* services Section */
+
+.services-image-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem 6.25rem;
+    /* flex-wrap: wrap; */
+}
+.services-card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.services-img-card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.services-img-container{
+    background-image: url(./Images/Prewedding1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* service card text content */
+
+.services-text-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-self: stretch;
+    color: var(--White, #FFF);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #301B04;
+}
+
+.services-img-container-pre-wedding{
+    background-image: url(./Images/pre2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services-img-container-wedding{
+    background-image: url(./Images/white.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services-img-container-portraits{
+    background-image: url(./Images/portraits.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services-img-container-product{
+    background-image: url(./Images/product1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services-text-container-professional{
+    background-image: url(./Images/professional.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services-img-container-professional{
+    background-image: url(./Images/professional.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* service card text container */
+
+.services-text-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-self: stretch;
+    color: var(--White, #FFF);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #301B04;
+}
+
+.services-text-container h2{
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--White, #FFF);
+    text-decoration: none;
+}
+
+.services-text-container p{
+    font-family: "Montserrat";
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--White, #FFF);
+    text-decoration: none;
+}
